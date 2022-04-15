@@ -1,12 +1,19 @@
 registry
 ========
 
+## Pre-Requisites
+1. Make sure helm version **3** is installed.
+```bash
+$ helm version --short
+v3.5.0+g32c2223
+```
+
 ## Setup
 1. To use the above helm chart make sure you have created your secrets as defined in `registry/values.yaml` under the heading `secrets`
 2. Also make sure `helm` is installed.
 3. Install the release using helm
 ```bash
-$ helm3 install registry registry
+$ helm install registry registry
 ```
 
 ## Development
