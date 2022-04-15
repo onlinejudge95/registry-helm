@@ -28,16 +28,3 @@ jobs:
         uses: WyriHaximus/github-action-helm3@v2.0
         with:
           exec: helm template registry
-
-  # test:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Checkout
-  #       uses: actions/checkout@v2
-  #       with:
-  #         fetch-depth: 0
-
-  #     - name: Test using helm
-  #       uses: WyriHaximus/github-action-helm3@v2.0
-  #       with:
-  #         exec: helm test registry

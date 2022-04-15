@@ -30,4 +30,3 @@ $ helm template registry
 1. Use `redis` as cache in config
 2. Provide healthchecks for backends
 3. Use redis pool for registry
-4. Fix registry test cases
