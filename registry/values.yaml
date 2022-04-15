@@ -108,6 +108,16 @@ podConfig:
       X-Content-Type-Options: [nosniff]
     http2:
       disabled: false
+  health:
+    storagedriver:
+      enabled: true
+      interval: 10s
+      threshold: 3
+    # tcp:
+    #   - addr: redis-server.domain.com:6379
+    #     timeout: 3s
+    #     interval: 10s
+    #     threshold: 3
 
 secrets:
   auth:
